@@ -17,8 +17,8 @@ document.querySelector('#login form').addEventListener('submit', async (e) => {
 
 document.querySelector('#register form').addEventListener('submit', async (e) => {
     e.preventDefault();
-    const userId = document.querySelector('#register .input-field[placeholder="User ID"]').value;
-    const email = document.querySelector('#register .input-field[placeholder="Email ID"]').value;
+    const userId = document.querySelector('#register .input-field[placeholder="User Id"]').value;
+    const email = document.querySelector('#register .input-field[placeholder="Email Id"]').value;
     const password = document.querySelector('#register .input-field[placeholder="Enter password"]').value;
     const response = await fetch('/register', {
         method: 'POST',
